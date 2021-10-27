@@ -1,0 +1,114 @@
+1. Give a list of advantages of Node.js
+-Bekerja Dengan Konsep Non-blocking
+-Cepat Dalam Mengeksekusi Kode 
+-Single-threaded 
+-Bersifat open source
+
+2. Give an explanation about Synchronous & Asynchronous
+-Synchronous Learning (sinkron) waktunya sudah terjadwal.
+-Asynchronous Learning waktunya tidak ditentukan.
+
+3. What is a module in Node.js?
+Modul bisa disamakan seperti library yang berisi fungsi-fungsi untuk digunakan di dalam aplikasi. 
+Sehingga kita tidak perlu membuat sendiri fungsi dari nol.
+Sebelum bisa digunakan, modul harus diimpor terlebih dahulu.
+
+4. Give an explanation about callback
+Callback sebenarnya adalah function bedanya dengan function pada umumnya adalah di cara eksekusinya. 
+Jika function pada umumnya di eksekusi berurutan dari atas ke bawah maka callback di eksekusi pada point tertentu, 
+itu sebabnya di sebut callback.
+
+5. What are array iterator functions in JavaScript?
+Iterator meningkatkan efisiensi dengan memungkinkan Anda menggunakan daftar item, 
+satu per satu, mirip dengan aliran data.
+
+6. What is the differentiation between SQL & NoSQL (at high level)?
+-Tipe Database
+SQL memiliki tipe database relasional karena SQL mengatur data yang berada di dalam database 
+dengan terstruktur ke dalam baris dan kolom yang telah ditentukan, dengan tabel yang saling terkait 
+dalam satu database.
+Sedangkan NoSQL, dikenal sebagai datanase non-relasional. Hal tersebut disebabkan karena 
+data yang disimpan di dalam database berbentuk kumpulan dengan dengan tidak ada atau sedikit
+hubungan di antara mereka.
+
+-Skema Database
+Pada jenis database SQL membutuhkan skema standar untuk data terstruktur. 
+Oleh karena itu, sebelum para pengembang mulai menggunakan SQL untuk mengelolah 
+dan mengatur data mereka, perlu dipastikan kembali bahwa struktur data telah ditentukan sebelumnya dalam bentuk tabel.
+Namun pada jenis database NoSQL, memiliki skema yang dinamis untuk data tidak terstruktur. 
+Oleh karena itu, ketika pengembang menggunakan database NoSQL, maka tidak perlu untuk menentukan 
+skema/struktur data sebelumnya. Skema lengkap data sepenuhnya bergantung pada cara pengembang 
+dalam menyimpan data (bidang mana yang ingin disimpan dalam dokumen dan koleksi).
+
+-Penggunaan Kueri yang Kompleks
+Jika membicarakan penggunaan kueri yang kompleks, SQL lebih cocok untuk itu 
+dibandingkan dengan NoSQL. Hal tersebut dikarenakan SQL memiliki skema terstruktur 
+dan memiliki format tabel untuk data yang disimpan di dalam database. Jadi, jika pengembang 
+ingin menerpakan kueri bercabang dengan banyak subkeri di dalam kueri luar, pengembang dapat 
+dengan mudah melakukannya dengan menggunakan nama tabel dan kolom yang tepat.
+Alasan mengapa NoSQL tidak cocok untuk pengelolahan data dengan kueri 
+yang kompleks adalah karena pada jenis database NoSQL tidak memiliki kueri bahasa 
+standar seperti yang dimiliki oleh SQL.
+
+-Penyimpanan Data Hirarkis
+Jika pengembang ingin menerapkan penyimpanan data hirarkis, maka 
+NoSQL adalah solusi terbaik untuk itu. Hal tersebut disebabkan karena 
+dengan bertambahnya jumlah tabel, kompleksitas menjaga hubungan di antara 
+mereka juga terus meningkat. Jadi, pada skenario tersebut, pengembang dapat 
+menghubungkan jumlah tabel yang sangat besar dengan banyak kolom di dalamnya satu sama lain.
+Database NoSQL semacam ini lebih cocok untuk penyimpanan data hierarkis karena mengikuti 
+cara pasangan nilai kunci untuk menyimpan data yang mirip dengan data JSON.
+
+-Skalabilitas
+Database SQL dapat diskalakan secara vertikal. pengembang dapat memuat keseimbangan 
+server data dengan mengoptimalkan perangkat keras seperti meningkatkan CPU, RAM, SSD, dll.
+Di sisi lain, database NoSQL dapat diskalakan secara horizontal. Pengembang dapat 
+melakukan penyeimbangan beban dengan menambahkan lebih banyak server ke kluster Anda 
+untuk menangani lalu lintas dalam jumlah besar.
+
+7. What is MongoDB?
+MongoDB adalah salah satu jenis database NoSQL berbasis dokumen dengan menggunakan format 
+file berupa JSON (JavaScript Object Notation). Jika dikomparasikan dengan penggunaan 
+database SQL, dimana setiap data tersimpan dalam bentuk tabel. Sedangkan pada MongoDB, 
+data akan disimpan ke dalam sebuah dokumen berformat JSON.
+
+8. What is index in MongoDB?
+indeks biasanya mungkin untuk lebih meningkatkan efisiensi query, jika tidak ada indeks, 
+MongoDB saat membaca data harus memindai setiap file dalam koleksi dan pilih catatan-catatan 
+yang cocok dengan kriteria query.
+Seluruh efisiensi pengumpulan permintaan scan ini adalah sangat rendah, terutama ketika 
+berhadapan dengan sejumlah besar data, query dapat mengambil puluhan detik atau bahkan menit, 
+kinerja situs ini sangat mematikan.
+Indeks adalah struktur data khusus, indeks disimpan dalam satu set data traversal mudah dibaca, 
+nilai indeks adalah struktur dari tabel database atau kolom untuk mengurutkan.
+
+9. What is Document & Collection in MongoDB?
+Collection: adalah sekelompok document MongoDB. Collection dapat dipadankan dengan table dalam RDBMS. 
+Sejumlah collection dapat berada dalam satu database tapi harus memiliki nama yang berbeda-beda. Wajarnya,
+collection-collection yang tergabung dalam satu database memiliki hubungan tertentu meskipun tidak dituntut 
+harus dibuat dengan suatu skema tertentu sperti halnya table dalam RDBMS.
+Documents: adalah satuan/unit data terkecil dalam MongoDB. Pada dasarnya tersusun atas sekelompok 
+pasangan key-value. Tak seperti record pada RDBMS, document memiliki skema yang dinamis, artinya: 
+document yang berada dalam satu collection tidak harus memiliki sekelompok field yang sama. Bandingkan 
+dengan table dalam RDBMS, setiap record (baris) akan memiliki field(kolom) yang sama. Satu lagi, field 
+yang berada dalam suatu document dapat memuat data dengan type yang berbeda-beda.
+
+10. What Data Types are supported in MongoDB?
+-Double
+-String
+-Object
+-Array
+-Binary data
+-Undefined
+-Object Id
+-Boolean
+-Date
+-Null
+-Regular Expression
+-JavaScript
+-symbol
+-JavaScript with scope
+-Integer
+-timestamp
+-Min key
+-Max key
