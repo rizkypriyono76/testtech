@@ -15,7 +15,7 @@ const data = [
 
 function result(data) {
   // Your Code Here
-  
+
   return data.filter(Boolean);
 }
 

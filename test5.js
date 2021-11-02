@@ -8,14 +8,14 @@
 const words = ['flower', 'flow', 'flight'];
 
 function result(words) {
-    // check border cases size 1 array and empty first word)
+    //periksa kotak perbatasan ukuran 1 array dan kosongkan kata pertama
   if (!words[0] || words.length ==  1) return words[0] || "";
   let i = 0;
-  // while all words have the same character at position i, increment i
+  // utk sementara semua kata memiliki karakter yang sama pada position i, increment i
   while(words[0][i] && words.every(w => w[i] === words[0][i]))
     i++;
   
-  // prefix is the substring from the beginning to the last successfully checked i
+  // substring dari awal hingga terakhir yang telah berhasil diperiksa
   return words[0].substr(0, i);
 }
 
